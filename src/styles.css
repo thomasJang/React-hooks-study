@@ -2,3 +2,9 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+nav {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}

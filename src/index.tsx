@@ -1,14 +1,20 @@
 import * as React from "react";
 import { render } from "react-dom";
-
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Counter from "./useRef";
 import "./styles.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <Router>
+      <div className="App">
+        <nav>
+          <Link to="/">Home</Link>,<Link to="/useRef">useRef Sample</Link>
+        </nav>
+
+        <Route path="/useRef" exact component={Counter} />
+      </div>
+    </Router>
   );
 }
 
